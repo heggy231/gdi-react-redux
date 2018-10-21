@@ -22,8 +22,8 @@
 
 import React from 'react';
 import data from '../../data.json';
-import ImageUploaderForm from '../ImageUploaderForm.jsx';
-import FeedList from '../FeedList.jsx';
+import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
+import FeedList from '../components/FeedList.jsx';
 
 
 const HomePage = () => {
@@ -31,6 +31,10 @@ const HomePage = () => {
     <div className="HomePage">
       <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
+			{/* including imaguploder, feedlist */}
+			<ImageUploaderForm />
+			<FeedList />
+
     </div>
   )
 }
