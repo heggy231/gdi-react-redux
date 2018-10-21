@@ -20,6 +20,7 @@ const FeedItem = () => {
   return (
     <div className="FeedItem">
       <img src="https://tinyurl.com/GDISFbanner"/>
+			<img src="https://media.giphy.com/media/5gXYzsVBmjIsw/giphy.gif"/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
 			<Likes />
@@ -28,6 +29,7 @@ const FeedItem = () => {
   )
 }
 
-// always match the component name FeedList with export Feedlist 
+// always match the component name FeedList 
+//  with export FeedItem, this file's functional component
 // remember to always export my functional component. export default the component!
-export default FeedList;
+export default FeedItem;
