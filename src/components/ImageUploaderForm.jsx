@@ -34,19 +34,30 @@
     // Then pass in that function as props to ImageUploaderForm
     // and when the user submits, call that function with the user submitted url.
 
-import React from 'react';
+import React, { Component } from 'react';
 
+// 0)   destructured import
+		// import React, { Component } from 'react';
+// 1)   inheritance (extends)
+		// class HomePage extends Component {
+// 2)   render method
+		// render() {
+// 3)   props as an attribute
+
+
+class ImageUploaderForm extends Component {
 // functional component, usu name your component same as the file is called
-const ImageUploaderForm = () => {
-  return (
-    <ul className="Header">
-      <li className="Logo">GDInsta</li>
-      <li>Home</li>
-      <li>About</li>
-      <li>Profile</li>
-      <img src="http://vectorlogo.zone/logos/reactjs/reactjs-card.png" />
-    </ul>
-  )
+  render() {
+    return (
+      <ul className="Header">
+        <li className="Logo">GDInsta</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Profile</li>
+        <img src="http://vectorlogo.zone/logos/reactjs/reactjs-card.png" />
+      </ul>
+    )
+  }
 }
 
 // gateway that other people can access Header Component, usu required

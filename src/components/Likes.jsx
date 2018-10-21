@@ -36,21 +36,36 @@ import React, { Component } from 'react';
 
 
 class Likes extends Component {
+	constructor(props) {
+		// set step when extending another class
+		super(props)
+		this.state = {
+			liked: false
+		}
+	}
+// handling method for each click for likes
+ handleClick = (e) => {
+	console.log("Clicked! ")
+	this.setState({ numLikes: e.target.value })
+ }
+
+
 	render() {
+		// this points to instance of likes
 		const { numLikes } = this.props
-		return (
-			<div className="Likes">
-				<span>
-					{/* displaying likes from line 31 */}
-					{ numLikes }
-				</span>
-	
-				<button>
-	
-				</button>
-	
-			</div>
-		)
+			return (
+				<div className="Likes">
+					<span>
+						{/* displaying likes from line 31 */}
+						{ numLikes }
+					</span>
+					{/* Create a button that toggles between two states: "Liked" and "Not liked (yet)"" */}
+					<button onClick={this.handleClick}>
+						Liked!!
+					</button>
+		
+				</div>
+			)
 	}
 	// props is obj that has the attribute of likes, take in number of likes as a prop
 }
