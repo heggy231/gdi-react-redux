@@ -21,4 +21,15 @@
     // and when the user submits, call that function with the user submitted url.
 
 import React from 'react';
-import data from '../../../data.json';
+import data from '../../data.json';
+
+
+const Welcome = () => {
+  return (
+    <div className="Welcome">
+      <img src="https://tinyurl.com/GDISFbanner"/>
+      <h1>Hello, GDISF!</h1>
+    </div>
+  )
+}
+

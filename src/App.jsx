@@ -17,3 +17,18 @@ import React from 'react';
 import Header from './components/Header.jsx';
 import HomePage from './pages/HomePage.jsx';
 
+// add App component this is render method!
+const App = () => {
+  return (
+    <div className="App">
+      Hello!
+			{/* this is jsx  without the curly*/}
+			<Header />
+			{/* whatever inside curly bracket is JS */}
+			{/* <HomePage /> */}
+    </div>
+  )
+}
+
+export default App;
+
