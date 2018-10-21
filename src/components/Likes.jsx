@@ -40,13 +40,14 @@ class Likes extends Component {
 		// set step when extending another class
 		super(props)
 		this.state = {
-			liked: false
+			liked: "Not Loveked"
 		}
 	}
-// handling method for each click for likes
+// Add a method to handle the click: handling method for each click for likes
  handleClick = (e) => {
 	console.log("Clicked! ")
-	this.setState({ numLikes: e.target.value })
+	// setState knows to lookfor this.state and grabs liked attribute
+	this.setState({ liked: e.target.value })
  }
 
 
@@ -61,7 +62,8 @@ class Likes extends Component {
 					</span>
 					{/* Create a button that toggles between two states: "Liked" and "Not liked (yet)"" */}
 					<button onClick={this.handleClick}>
-						Liked!!
+					{/* dispalying liked state on the screen */}
+						{ this.state.liked }
 					</button>
 		
 				</div>
