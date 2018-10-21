@@ -24,24 +24,35 @@
 	 // increase or decrease the likes based on whether button click is like/ unlike
 	 // hint: take the total likes as a prop, and convert it to state
 
-import React from 'react';
+import React, { Component } from 'react';
 
-const Likes = (props) => {
+// 0)   destructured import
+		// import React, { Component } from 'react';
+// 1)   inheritance (extends)
+		// class HomePage extends Component {
+// 2)   render method
+		// render() {
+// 3)   props as an attribute
+
+
+class Likes extends Component {
+	render() {
+		const { numLikes } = this.props
+		return (
+			<div className="Likes">
+				<span>
+					{/* displaying likes from line 31 */}
+					{ numLikes }
+				</span>
+	
+				<button>
+	
+				</button>
+	
+			</div>
+		)
+	}
 	// props is obj that has the attribute of likes, take in number of likes as a prop
-	const { numLikes } = props
-  return (
-    <div className="Likes">
-			<span>
-				{/* displaying likes from line 31 */}
-				{ numLikes }
-			</span>
-
-			<button>
-
-			</button>
-
-    </div>
-  )
 }
 
 export default Likes;
