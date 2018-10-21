@@ -10,7 +10,8 @@
 	// iterate over the data and map each photo data to a FeedItem
 
 import React from 'react';
-import FeedItem from 'FeedItem.jsx';
+// eventhough file is right next to me I need to add ./ for file path
+import FeedItem from './FeedItem.jsx';
 
 const FeedList = () => {
   return (

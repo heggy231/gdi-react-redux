@@ -13,7 +13,7 @@
 
 import React from 'react';
 // importing Likes.jsx
-import Likes from 'Likes.jsx';
+// import Likes from 'Likes.jsx';
 
 // this is my functional component called FeedItem
 const FeedItem = () => {
