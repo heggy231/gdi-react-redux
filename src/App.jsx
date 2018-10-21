@@ -25,7 +25,7 @@ const App = () => {
 			{/* this is jsx  without the curly*/}
 			<Header />
 			{/* whatever inside curly bracket is JS */}
-			{/* <HomePage /> */}
+			<HomePage />
     </div>
   )
 }

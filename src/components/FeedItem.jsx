@@ -32,6 +32,7 @@ const FeedItem = (props) => {
 	const { photo } = props
 		// photo.url this is destructuring
 	const { url } = photo
+	const { likes } = photo
   return (
     <div className="FeedItem">
       <img className="Image" src="https://tinyurl.com/GDISFbanner"/>
@@ -40,7 +41,9 @@ const FeedItem = (props) => {
 			<img className="Image" src={ url }/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
-			<Likes />
+			{/* <FeedList photos={ photos } /> */}
+			{/* Likes likes is used by likes component of Likes.jsx  */}
+			<Likes likes = { likes }/>
 
     </div>
   )

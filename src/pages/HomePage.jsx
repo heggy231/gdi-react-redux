@@ -36,7 +36,9 @@ const HomePage = () => {
       <h1>Hello, GDISF!</h1>
 			{/* including imaguploder, feedlist */}
 			<ImageUploaderForm />
-			{/* get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!), next let FeedList.jsx know it is coming  */}
+			{/* get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!), next let FeedList.jsx know it is coming.  Note: photos inside of FeedList is coming from FeedList
+				{ photos } is up in code line 29 which fetching data json
+			*/}
 			<FeedList photos={ photos } />
 
 
