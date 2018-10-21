@@ -18,12 +18,18 @@
 	// you will need to create a function called handleAddPhoto that updates photos state by
 	// accepting a url and creating a new object in photos state of the homepage component.
     // Then pass in that function as props to ImageUploaderForm
-    // and when the user submits, call that function with the user submitted url.
+		// and when the user submits, call that function with the user submitted url.
+		
+
+// Note on convert functional to class component
+// https://docs.google.com/presentation/d/144DViot4VJSOx-jmXDLIExE06Wky6pFS4QKkHZxtl1o/edit#slide=id.g249b34e1dd_0_271
+// slide 88
 
 import React from 'react';
 import data from '../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList.jsx';
+
 
 // this is destructuring data json photos
 const { photos } = data;

@@ -13,7 +13,7 @@
 
 import React from 'react';
 // importing Likes.jsx
-// import Likes from 'Likes.jsx';
+import Likes from './Likes.jsx';
 
 // this is my functional component called FeedItem
 {/*  This is baby of FeedList.jsx
@@ -35,15 +35,14 @@ const FeedItem = (props) => {
 	const { likes } = photo
   return (
     <div className="FeedItem">
-      <img className="Image" src="https://tinyurl.com/GDISFbanner"/>
-			<img className="Image" src="https://media.giphy.com/media/5gXYzsVBmjIsw/giphy.gif"/>
+
 			{/* img inside of <FeedItem/> needs to display the src url that gets passed to it */}
 			<img className="Image" src={ url }/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
 			{/* <FeedList photos={ photos } /> */}
 			{/* Likes likes is used by likes component of Likes.jsx  */}
-			<Likes likes = { likes }/>
+			<Likes numLikes = { likes }/>
 
     </div>
   )

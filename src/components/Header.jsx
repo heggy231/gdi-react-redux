@@ -20,7 +20,7 @@ const Header = () => {
       <li>Home</li>
       <li>About</li>
       <li>Profile</li>
-      <img src="http://vectorlogo.zone/logos/reactjs/reactjs-card.png" />
+      {/* <img src="http://vectorlogo.zone/logos/reactjs/reactjs-card.png" /> */}
     </ul>
   )
 }

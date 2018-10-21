@@ -28,12 +28,12 @@ import React from 'react';
 
 const Likes = (props) => {
 	// props is obj that has the attribute of likes, take in number of likes as a prop
-	const { likes } = props
+	const { numLikes } = props
   return (
     <div className="Likes">
 			<span>
 				{/* displaying likes from line 31 */}
-				{ likes }
+				{ numLikes }
 			</span>
 
 			<button>

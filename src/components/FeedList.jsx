@@ -19,7 +19,6 @@ const FeedList = (props) => {
 	const { photos } = props
   return (
     <div className="FeedList">
-      <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
 
