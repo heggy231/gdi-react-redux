@@ -10,15 +10,15 @@
 	// iterate over the data and map each photo data to a FeedItem
 
 import React from 'react';
+import FeedItem from 'FeedItem';
 
 const FeedList = () => {
   return (
-    <div className="HomePage">
+    <div className="FeedList">
       <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
 			{/* including imaguploder, feedlist */}
-			<ImageUploaderForm />
-			<FeedList />
+			<FeedItem />
 
     </div>
   )
