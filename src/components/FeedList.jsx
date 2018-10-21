@@ -10,14 +10,14 @@
 	// iterate over the data and map each photo data to a FeedItem
 
 import React from 'react';
-import FeedItem from 'FeedItem';
+import FeedItem from 'FeedItem.jsx';
 
 const FeedList = () => {
   return (
     <div className="FeedList">
       <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
-			{/* including imaguploder, feedlist */}
+			{/* including FeedItem inside the div */}
 			<FeedItem />
 
     </div>
@@ -25,5 +25,5 @@ const FeedList = () => {
 }
 
 // always match the component name FeedList with export Feedlist 
-// remember to always export my functional component
+// remember to always export my functional component. export default the component!
 export default FeedList;

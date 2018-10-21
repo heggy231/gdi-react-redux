@@ -35,3 +35,19 @@
     // and when the user submits, call that function with the user submitted url.
 
 import React from 'react';
+
+// functional component, usu name your component same as the file is called
+const ImageUploaderForm = () => {
+  return (
+    <ul className="Header">
+      <li className="Logo">GDInsta</li>
+      <li>Home</li>
+      <li>About</li>
+      <li>Profile</li>
+      <img src="http://vectorlogo.zone/logos/reactjs/reactjs-card.png" />
+    </ul>
+  )
+}
+
+// gateway that other people can access Header Component, usu required
+export default ImageUploaderForm;

@@ -12,3 +12,22 @@
 	// Hint: what do you need in order to get likes to display in the Likes component?
 
 import React from 'react';
+// importing Likes.jsx
+import Likes from 'Likes.jsx';
+
+// this is my functional component called FeedItem
+const FeedItem = () => {
+  return (
+    <div className="FeedItem">
+      <img src="https://tinyurl.com/GDISFbanner"/>
+      <h1>Hello, GDISF!</h1>
+			{/* including FeedItem inside the div */}
+			<Likes />
+
+    </div>
+  )
+}
+
+// always match the component name FeedList with export Feedlist 
+// remember to always export my functional component. export default the component!
+export default FeedList;
