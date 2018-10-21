@@ -25,7 +25,7 @@
 // https://docs.google.com/presentation/d/144DViot4VJSOx-jmXDLIExE06Wky6pFS4QKkHZxtl1o/edit#slide=id.g249b34e1dd_0_271
 // slide 88
 
-import React from 'react';
+import React, { Component } from 'react';
 import data from '../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList.jsx';
@@ -34,22 +34,29 @@ import FeedList from '../components/FeedList.jsx';
 // this is destructuring data json photos
 const { photos } = data;
 // const photos = data["photos"]
-
-const HomePage = () => {
-  return (
-    <div className="HomePage">
-      <img src="https://tinyurl.com/GDISFbanner"/>
-      <h1>Hello, GDISF!</h1>
-			{/* including imaguploder, feedlist */}
-			<ImageUploaderForm />
-			{/* get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!), next let FeedList.jsx know it is coming.  Note: photos inside of FeedList is coming from FeedList
-				{ photos } is up in code line 29 which fetching data json
-			*/}
-			<FeedList photos={ photos } />
-
-
-    </div>
-  )
+// 0)   destructured import
+		// import React, { Component } from 'react';
+// 1)   inheritance (extends)
+		// class HomePage extends Component {
+// 2)   render method
+		// render() {
+// 3)   props as an attribute
+class HomePage extends Component {
+	render() {
+		return (
+			<div className="HomePage">
+				<img src="https://tinyurl.com/GDISFbanner"/>
+				<h1>Hello, GDISF!</h1>
+				{/* including imaguploder, feedlist */}
+				<ImageUploaderForm />
+				{/* get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!), next let FeedList.jsx know it is coming.  Note: photos inside of FeedList is coming from FeedList
+					{ photos } is up in code line 29 which fetching data json
+				*/}
+				<FeedList photos={ photos } />
+			</div>
+		)
+	}
 }
 
+  
 export default HomePage;
