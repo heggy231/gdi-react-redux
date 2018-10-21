@@ -16,7 +16,11 @@ import React from 'react';
 // import Likes from 'Likes.jsx';
 
 // this is my functional component called FeedItem
-const FeedItem = () => {
+{/*  This is baby of FeedList.jsx
+			I am passing parameter key, photo which is an obj, and bundle it called props <FeedItem key={i} photo={photo} /> */}
+const FeedItem = (props) => {
+	// const photo = props["photo"] same syntax as below
+	const { photo } = props
   return (
     <div className="FeedItem">
       <img src="https://tinyurl.com/GDISFbanner"/>

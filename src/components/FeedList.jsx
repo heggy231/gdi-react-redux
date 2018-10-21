@@ -26,13 +26,10 @@ const FeedList = (props) => {
 			{
 				photos.map((photo, i) =>
 				// FeedList is parent and FeedItem is a baby component look at slide 84, https://docs.google.com/presentation/d/144DViot4VJSOx-jmXDLIExE06Wky6pFS4QKkHZxtl1o/edit#slide=id.g1ea4206e08_4_330
-					<FeedItem key={i} number={photo} />
+					<FeedItem key={i} photo={photo} />
 				)
 			}
 		</div>
-			)
-		}
-    </div>
   )
 }
 
