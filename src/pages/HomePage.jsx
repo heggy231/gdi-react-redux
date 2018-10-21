@@ -22,14 +22,15 @@
 
 import React from 'react';
 import data from '../../data.json';
+import ImageUploaderForm from '../ImageUploaderForm.jsx';
+import FeedList from '../FeedList.jsx';
 
 
-const Welcome = () => {
+const HomePage = () => {
   return (
-    <div className="Welcome">
+    <div className="HomePage">
       <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
     </div>
   )
 }
-
