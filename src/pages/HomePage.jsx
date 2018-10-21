@@ -25,6 +25,9 @@ import data from '../../data.json';
 import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList.jsx';
 
+// this is destructuring data json photos
+const { photos } = data;
+// const photos = data["photos"]
 
 const HomePage = () => {
   return (
@@ -33,7 +36,9 @@ const HomePage = () => {
       <h1>Hello, GDISF!</h1>
 			{/* including imaguploder, feedlist */}
 			<ImageUploaderForm />
-			<FeedList />
+			{/* get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!), next let FeedList.jsx know it is coming  */}
+			<FeedList photos={ photos } />
+
 
     </div>
   )

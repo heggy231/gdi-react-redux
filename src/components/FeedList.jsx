@@ -13,14 +13,25 @@ import React from 'react';
 // eventhough file is right next to me I need to add ./ for file path
 import FeedItem from './FeedItem.jsx';
 
-const FeedList = () => {
+const FeedList = (props) => {
+	// calling the props.photos from jason data
+	//  get those photos from <Homepage/> component to <FeedList/> component?  (hint: props!)
+	const { photos } = props
   return (
     <div className="FeedList">
       <img src="https://tinyurl.com/GDISFbanner"/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
-			<FeedItem />
 
+			{
+				photos.map((photo, i) =>
+				// FeedList is parent and FeedItem is a baby component look at slide 84, https://docs.google.com/presentation/d/144DViot4VJSOx-jmXDLIExE06Wky6pFS4QKkHZxtl1o/edit#slide=id.g1ea4206e08_4_330
+					<FeedItem key={i} number={photo} />
+				)
+			}
+		</div>
+			)
+		}
     </div>
   )
 }
