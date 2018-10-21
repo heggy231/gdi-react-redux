@@ -19,12 +19,25 @@ import React from 'react';
 {/*  This is baby of FeedList.jsx
 			I am passing parameter key, photo which is an obj, and bundle it called props <FeedItem key={i} photo={photo} /> */}
 const FeedItem = (props) => {
-	// const photo = props["photo"] same syntax as below
+
+	// This is what data I am looking at, I am pulling just url which is photo!
+	// {
+	// 	"id": 1,
+	// 	"title": "Too cool for school",
+	// 	"url": "https://media.giphy.com/media/5gXYzsVBmjIsw/giphy.gif",
+	// 	"likes": 305,
+	// 	"userLiked": false
+	// },
+		// const photo = props["photo"] same syntax as below
 	const { photo } = props
+		// photo.url this is destructuring
+	const { url } = photo
   return (
     <div className="FeedItem">
-      <img src="https://tinyurl.com/GDISFbanner"/>
-			<img src="https://media.giphy.com/media/5gXYzsVBmjIsw/giphy.gif"/>
+      <img className="Image" src="https://tinyurl.com/GDISFbanner"/>
+			<img className="Image" src="https://media.giphy.com/media/5gXYzsVBmjIsw/giphy.gif"/>
+			{/* img inside of <FeedItem/> needs to display the src url that gets passed to it */}
+			<img className="Image" src={ url }/>
       <h1>Hello, GDISF!</h1>
 			{/* including FeedItem inside the div */}
 			<Likes />
